@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+*{-moz-box-sizing:border-box;box-sizing:border-box;}
+body{font:1em/1 "Alef Hebrew",sans-serif;color:#333;background:#eee;margin:0;}
+a{background:transparent;color:#428bca;text-decoration:none;}
+a:active,a:hover{outline:0;}
+a:hover,a:focus{color:#2a6496;text-decoration:underline;}
+a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+
+.main-content{max-width:900px;margin:0 auto;padding:0 1.2em;}
+
+dt{float:right;width:180px;clear:right;}
+dd{display:block;margin-right:180px;}
+dl{margin:0;}
+dd:after{clear:both;}
+dd:before,dd:after{display:table;content:" ";}
+
+.footer{text-align:center;font-size:.8em;margin:2.5em 0 8px 0;}
+.footer p{margin:0;}
+
+/*TOPNAV*/
+
+.topnav,.topnav ul,.topnav li{margin:0;padding:0;}
+.topnav{background:#fcc;font-size:1.1em;margin:0 0 2em;}
+.topnav ul{display:none;position:absolute;right:0;top:0;background:#c99;border-radius:5px/0 0 5px 5px;z-index:2;margin:1.6em .2em;}
+.topnav ul li{display:inline-block;width:100%;}
+.topnav ul li:hover{background:#b88;}
+.topnav ul li:last-child{border-radius:5px/0 0 5px 5px;}
+.topnav ul a{color:#fff;padding:.4em;display:inline-block;width:100%;}
+.topnav .current-page>a{font-weight:bold;}
+.topnav>li{display:inline;position:relative;}
+.topnav a{text-decoration:none;display:inline-block;white-space:nowrap;}
+.topnav>li>a{height:1.8em;background:#f5c5c5;padding:.4em;border-radius:5px/5px;}
+.topnav>li.topnav-submenu:hover>a{background:#b88;color:#fff;border-radius:5px/5px 5px 0 0;}
+.topnav>li.topnav-submenu>a:after{content:"↓";display:inline-block;width:0;height:0;margin-right:5px;vertical-align:middle;border-top:4px solid #b88;border-right:4px solid transparent;border-bottom:0 dotted;border-left: 4px solid transparent;overflow:hidden;}
+.topnav>li.topnav-submenu:hover>a:after{border-top-color:#fff;}
+.topnav>li.topnav-submenu:hover>ul{display:inline-block;}
+.topnav>li>a:hover{background:#b88;color:#fff;}
+
+.topnav{padding:.2em 0;}
+.topnav .homelink a{margin:.2em;}
+.topnav>li>a{height:1.8em;padding:.4em;margin:.2em;}
+@media (min-width: 770px) {
+	.topnav{padding:.4em 0;}
+	.topnav .homelink a{margin:0 2.6em 0 1.1em;}
+	.topnav>li>a{height:1.8em;padding:.4em;margin:0 1.1em;}
+	.topnav ul{margin:1.6em 1.1em;}
+}
+@media (min-width: 900px) {
+	.topnav .homelink a{margin:0 3.6em 0 1.6em;}
+	.topnav>li>a{margin:0 1.6em;}
+	.topnav ul{margin:1.6em 1.6em;}
+}
